@@ -1,16 +1,21 @@
 @font-face {
   font-family: "gelion-light";
-  src: url("/font/Gelion\ Light.ttf");
+  src: url("/capstone/font/Gelion\ Light.ttf");
 }
 
 @font-face {
   font-family: "gelion-med";
-  src: url("/font/Gelion\ Medium.ttf");
+  src: url("/capstone/font/Gelion\ Medium.ttf");
 }
 
 @font-face {
   font-family: "gelion-big";
-  src: url("/font/Gelion\ Bold.ttf");
+  src: url("/capstone/font/Gelion\ Bold.ttf");
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* a {
@@ -22,7 +27,7 @@
 .ownBtn {
   padding: 0 20px;
   margin-right: 20px;
-  font-size: clamp(16px, 2.5vw, 23px);
+  font-size: clamp(16px, 2.5vw, 21px);
   font-family: "gelion-med", Arial, Helvetica, sans-serif;
   border: 1px solid black;
   border-radius: 30px;
@@ -221,7 +226,7 @@
 /* ============= BMI PAGE ============ */
 
 .bmi {
-  padding: 80px 0px;
+  padding: 80px 0px 25px 0px;
 }
 
 .bmi .plate {
@@ -284,7 +289,6 @@
 }
 
 .bmi #index {
-  margin-left: 2%;
   font-size: clamp(3.5rem, 5vw, 65px);
 
   font-family: "gelion-big", Arial, Helvetica, sans-serif;
@@ -293,10 +297,87 @@
 .bmiResult #bmiResult {
   font-family: "gelion-med", Arial, Helvetica, sans-serif;
   font-size: clamp(17px, 3vw, 25px);
+  width: 1000%;
+  margin: auto;
+}
+
+/* SIGN UP */
+
+.signup {
+  padding: 80px 0px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.signup form {
+}
+
+.leftSignup {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/capstone/img/signup.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.rightSignup {
+  /* background-color: rebeccapurple; */
+  padding: 25px 6%;
+}
+
+.signup form {
+  box-shadow: 0 0 8px 5px #999;
+}
+
+.rightSignup #signupPar {
+  font-family: "gelion-med", Arial, Helvetica, sans-serif;
+  font-size: clamp(13px, 2.5vw, 16px);
+  text-transform: uppercase;
+  color: #324454;
+}
+
+.rightSignup h1 {
+  font-size: clamp(2.5rem, 3.3vw, 50px);
+  font-weight: 500;
+  font-family: "gelion-big", Arial, Helvetica, sans-serif;
+  color: rgb(38, 30, 30);
+}
+
+.rightSignup small {
+  font-family: "gelion-med", Arial, Helvetica, sans-serif;
+  font-size: clamp(13px, 2.5vw, 16px);
+  text-transform: uppercase;
+  color: #324454;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.rightSignup .signupInput {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #344756;
+  color: #344756;
+  padding: 7px;
+  background-color: rgb(245, 236, 236);
+}
+
+.rightSignup .names {
+  width: 50% !important;
+}
+
+.rightSignup button {
+  background-color: #3dc795;
+  border: 1px solid #3dc795 !important;
+  color: white;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 990px) {
   #mainNav .navbar-nav {
     margin-left: 5% !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .signup .leftSignup {
+    display: none;
   }
 }

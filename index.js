@@ -9,6 +9,11 @@ function letter(input) {
 let reset = document.querySelector(".reset");
 
 function resetInput() {
+  let setWeight = document.querySelector("#weight");
+  let setHeight = document.querySelector("#height");
+
+  setWeight.value = "";
+  setHeight.value = "";
   window.location.reload();
 }
 
