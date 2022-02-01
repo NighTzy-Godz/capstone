@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -21,8 +22,7 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-
-    <title>BMI</title>
+    <title>DANGO?</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
@@ -36,7 +36,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon" style=""></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul
@@ -69,81 +69,54 @@
       </div>
     </nav>
 
-    <!-- BMI -->
-
-    <div class="bmi">
+    <div class="login">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h3 class="plate">Check Your Health</h3>
-            <h1 class="bmiTitle">Let's Find Your BMI (BODY MASS INDEX)</h1>
-            <p class="bmiPar">
-              Your BMI is a measurement that is a ratio of your weight and
-              height. It’s a good way to gauge whether your weight is in healthy
-              proportion to your height. In fact, knowing your BMI can help you
-              – and your GP – determine any health risks you may face if it’s
-              outside of the healthy range.
-            </p>
+        <form action="" class="row">
+          <div class="col-md-5 leftLogin"></div>
+          <div class="col-md-7 rightLogin">
+            <div class="loginTitle">
+              <i class="fas fa-utensils"></i>
+              <h1>DANGO</h1>
+            </div>
 
-            <p class="bmiPar">
-              While it may be a great guide to establishing the amount of body
-              fat you carry, your BMI won’t take into consideration your age,
-              sex, ethnicity, or even muscle mass. It’s also not appropriate in
-              determining a healthy weight in the elderly, children, pregnant
-              women or even athletes.
-            </p>
-
-            <p class="bmiPar">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, molestias, adipisci officia asperiores aliquid est vel
-              in corporis natus nemo et dolore fugit expedita inventore sed
-              totam autem cumque! Fugit!
-            </p>
-          </div>
-          <div class="col-md-6">
-            <h1 class="bmiTitle text-center" style="margin-top: 36px">
-              Put Your Inputs Below <br />
-              <i class="fas fa-arrow-down"></i>
-            </h1>
-            <div class="bmiInput">
-              <h3>Enter Your Weight</h3>
+            <div class="loginDiv">
               <input
                 type="text"
-                placeholder="Weight in Kilograms"
-                id="weight"
-                class="inputs"
-                onkeyup="letter(this)"
+                name="username"
+                id=""
+                placeholder="Username"
+                class="signupInput"
               />
             </div>
-            <div class="bmiInput">
-              <h3>Enter Your Height</h3>
+            <div class="loginDiv">
               <input
-                type="text"
-                placeholder="Height in Centimeters"
-                id="height"
-                class="inputs"
-                onkeyup="letter(this)"
+                type="password"
+                name="username"
+                id=""
+                placeholder="Password"
+                class="signupInput"
               />
             </div>
-            <div class="bmiBtn">
-              <button class="reset btn btn-md btn-danger">Reset</button>
-              <button class="calculate btn btn-md">Calculate</button>
-            </div>
-
-            <div class="bmiResult">
-              <h3 id="index">0</h3>
-              <p id="bmiResult">NO STATUS</p>
-            </div>
+            <button>LOGIN</button>
+            <small
+              >You Dont Have An Account?<a href="/capstone/html/signup.html">
+                Create Here</a
+              ></small
+            >
           </div>
-        </div>
+        </form>
       </div>
     </div>
+
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="/capstone//index.js"></script>
+
+    <script type="text/javascript">
+      // alert("TESTING PALANG TO MGA IDOL HUEHEUHEU");
+    </script>
   </body>
 </html>

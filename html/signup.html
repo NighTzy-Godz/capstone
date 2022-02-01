@@ -62,7 +62,9 @@
         </ul>
 
         <div class="auth" style="margin-left: 5%">
-          <a href="#" class="nav-link ownBtn signIn">Sign In</a>
+          <a href="/capstone/html/login.html" class="nav-link ownBtn signIn"
+            >Sign In</a
+          >
           <a href="/capstone/html/signup.html" class="nav-link ownBtn signUp"
             >Sign Up</a
           >
@@ -79,7 +81,10 @@
           <div class="col-md-7 rightSignup">
             <p id="signupPar">It's All Free!</p>
             <h1>Create New Account</h1>
-            <small>Already A Member? <a href="#">Log In</a></small>
+            <small
+              >Already A Member?
+              <a href="/capstone/html/login.html">Log In</a></small
+            >
             <div class="d-flex mb-4">
               <input
                 type="text"
@@ -97,12 +102,20 @@
                 placeholder="Last Name"
               />
             </div>
-            <div class="mb-4">
+            <div class="mb-4 d-flex">
+              <input
+                type="text"
+                name="username"
+                id=""
+                class="signupInput names"
+                style="margin-right: 3%"
+                placeholder="Username"
+              />
               <input
                 type="email"
                 name="email"
                 id=""
-                class="signupInput"
+                class="signupInput names"
                 placeholder="Email"
               />
             </div>

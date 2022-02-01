@@ -18,6 +18,10 @@ p {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* a {
   font-family: "gelion-light", Arial, Helvetica, sans-serif;
   font-size: 21px;
@@ -87,9 +91,13 @@ p {
   margin-bottom: 20px;
 }
 
-.landing .title h1 {
-  font-size: clamp(3rem, 4.5vw, 60px);
+/* .landing .title {
+  text-align: 
+} */
 
+.landing .title h1 {
+  font-size: clamp(3rem, 4.5vw, 64px);
+  color: #233748;
   font-family: "gelion-big", Arial, Helvetica, sans-serif;
   margin-bottom: 30px;
 }
@@ -159,7 +167,7 @@ p {
 }
 
 .mainTitle .title h1 {
-  font-size: clamp(2.2rem, 3vw, 35px);
+  font-size: clamp(2.4rem, 3.5vw, 64px);
   font-family: "gelion-med", Arial, Helvetica, sans-serif;
   margin-bottom: 30px;
 }
@@ -309,9 +317,6 @@ p {
   margin: 0 auto;
 }
 
-.signup form {
-}
-
 .leftSignup {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/capstone/img/signup.jpg");
@@ -351,13 +356,15 @@ p {
   display: block;
 }
 
-.rightSignup .signupInput {
+.signupInput {
   width: 100%;
   border-radius: 5px;
   border: 1px solid #344756;
   color: #344756;
   padding: 7px;
   background-color: rgb(245, 236, 236);
+  font-size: clamp(16px, 2.5vw, 20px);
+  font-family: "gelion-med", Arial, Helvetica, sans-serif;
 }
 
 .rightSignup .names {
@@ -370,8 +377,80 @@ p {
   color: white;
 }
 
+/* LOGIN */
+
+.login {
+  padding: 80px 0px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.login form {
+  box-shadow: 0 0 8px 5px #999;
+  /* height: 500px; */
+}
+
+.login .leftLogin {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/capstone/img/loginImg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.login .rightLogin {
+  padding: 40px 10%;
+}
+
+.rightLogin .loginTitle {
+  text-align: center;
+  padding: 5px 0px 30px 0px;
+}
+
+.rightLogin .loginTitle i {
+  color: #3dc795;
+  font-size: clamp(30px, 4vw, 50px);
+  margin-bottom: 10px;
+}
+
+.rightLogin .loginTitle h1 {
+  font-size: clamp(2.5rem, 3.5vw, 50px);
+  font-weight: 400;
+  font-family: "gelion-big", Arial, Helvetica, sans-serif;
+  color: #3dc795;
+}
+
+.rightLogin .loginDiv {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.rightLogin button {
+  padding: 8px;
+  width: 100%;
+  border: none;
+  background-color: #3dc795;
+  font-size: clamp(16px, 2.5vw, 21px);
+  font-family: "gelion-med", Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.rightLogin small {
+  font-family: "gelion-med", Arial, Helvetica, sans-serif;
+  font-size: clamp(13px, 2.5vw, 16px);
+  text-transform: uppercase;
+  color: #324454;
+  margin-bottom: 20px;
+  display: block;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 990px) {
   #mainNav .navbar-nav {
+    margin-left: 5% !important;
+  }
+
+  #mainNav .auth {
     margin-left: 5% !important;
   }
 }
