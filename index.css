@@ -13,6 +13,10 @@
   src: url("/capstone/font/Gelion\ Bold.ttf");
 }
 
+html {
+  overflow-x: hidden;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -75,12 +79,24 @@ a {
 
 #mainNav .signIn {
   color: black;
+  transition: transform 0.3s ease-in-out;
+}
+
+#mainNav .signIn:hover {
+  transform: scale(1.1);
 }
 
 #mainNav .signUp {
   color: rgba(255, 255, 255, 0.864);
   background-color: #3dc795;
   border: 1px solid #3dc795 !important;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+#mainNav .signUp:hover {
+  transform: scale(1.1);
+  background-color: #3ea07c;
 }
 
 /* LANDING PAGE */
@@ -110,7 +126,7 @@ a {
 }
 
 .landing .title a {
-  padding: 5px 20px;
+  padding: 10px 20px;
   margin-right: 20px;
   font-size: clamp(21px, 3vw, 25px);
   font-family: "gelion-med", Arial, Helvetica, sans-serif;
@@ -121,7 +137,13 @@ a {
   background-color: #3dc795;
   border: 1px solid #3dc795 !important;
   width: 25%;
-  text-decoration: none;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.landing .title a:hover {
+  transform: scale(3);
+  background-color: #3ea07c;
 }
 
 /* DISCOVER */
@@ -134,6 +156,7 @@ a {
   font-size: clamp(2.2rem, 3vw, 35px);
   font-family: "gelion-med", Arial, Helvetica, sans-serif;
   margin-bottom: 30px;
+  color: #233748;
 }
 
 .discover p {
@@ -170,6 +193,7 @@ a {
   font-size: clamp(2.4rem, 3.5vw, 64px);
   font-family: "gelion-med", Arial, Helvetica, sans-serif;
   margin-bottom: 30px;
+  color: #233748;
 }
 
 .mainTitle .title p {
@@ -208,6 +232,7 @@ a {
   font-size: clamp(2.2rem, 3vw, 4.5rem);
   font-family: "gelion-med", Arial, Helvetica, sans-serif;
   margin-bottom: 35px;
+  color: #233748;
 }
 
 .instruct .instructTitle p {
@@ -245,7 +270,7 @@ a {
 
 .bmi .bmiTitle {
   font-size: clamp(2.5rem, 4vw, 50px);
-
+  color: #233748;
   font-family: "gelion-big", Arial, Helvetica, sans-serif;
   margin-bottom: 42px;
 }
@@ -344,7 +369,7 @@ a {
   font-size: clamp(2.5rem, 3.3vw, 50px);
   font-weight: 500;
   font-family: "gelion-big", Arial, Helvetica, sans-serif;
-  color: rgb(38, 30, 30);
+  color: #233748;
 }
 
 .rightSignup small {
@@ -443,6 +468,93 @@ a {
   color: #324454;
   margin-bottom: 20px;
   display: block;
+}
+
+/* TEAM */
+
+.team {
+  padding: 80px 0px;
+}
+
+.team .title h1 {
+  font-size: clamp(2.5rem, 3vw, 4.5rem);
+  font-family: "gelion-med", Arial, Helvetica, sans-serif;
+  margin-bottom: 25px;
+  color: #233748;
+}
+
+.team .title span {
+  color: #3dc795;
+}
+
+.team .title p {
+  width: 80%;
+  margin: auto;
+  font-family: "gelion-light", Arial, Helvetica, sans-serif;
+  font-size: clamp(19px, 3vw, 25px);
+  color: black;
+  margin-bottom: 30px;
+}
+
+.team .card {
+  width: 90%;
+  margin: 0 auto 40px auto;
+}
+
+.team,
+.learnHide .card h2 {
+  font-size: clamp(26px, 3vw, 28px);
+  font-family: "gelion-bold", Arial, Helvetica, sans-serif;
+  color: #3dc795;
+}
+
+.team .card-body p {
+  margin-bottom: 20px;
+  font-family: "gelion-light", Arial, Helvetica, sans-serif;
+  font-size: clamp(17px, 3vw, 19px);
+  color: black;
+}
+
+.team .card-body .learn {
+  background-color: #38c876;
+  color: white;
+  font-family: "gelion-light", Arial, Helvetica, sans-serif;
+  font-size: clamp(15px, 2vw, 17px);
+  transition: all 0.3s ease-in-out;
+}
+
+.team .card-body .learn:hover {
+  transform: scale(1.1);
+  background-color: #3ea07c;
+}
+
+/* .learnHide {
+  position: absolute;
+  top: 0;
+
+}
+
+.learnHide .card {
+  position: none !important;
+  width: 90%;
+  margin: 0 auto 40px auto;
+} */
+
+.modal-body img {
+  width: 100%;
+}
+
+.modal-body h1 {
+  font-size: clamp(26px, 3vw, 35px);
+  font-family: "gelion-bold", Arial, Helvetica, sans-serif;
+  color: #3dc795;
+  margin: 20px 0px;
+}
+
+.modal-body p {
+  font-family: "gelion-light", Arial, Helvetica, sans-serif;
+  font-size: clamp(19px, 3vw, 21px);
+  color: #324454;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 990px) {

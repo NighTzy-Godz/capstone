@@ -137,3 +137,13 @@ function printBmi() {
 // CONTROLLER ON CALCULATE
 let calculate = document.querySelector(".calculate");
 calculate.addEventListener("click", printBmi);
+
+// ================ OUR TEAM ====================
+
+let teamBtn = document.querySelectorAll(".learn");
+
+for (let btn of teamBtn) {
+  btn.addEventListener("click", () => {
+    console.log("CLICKED");
+  });
+}
