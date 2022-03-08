@@ -582,7 +582,7 @@ a {
 }
 
 .recipe #cardLine {
-  width: 90%;
+  width: 100%;
   margin: 0 100% 10px 0;
 }
 
@@ -606,6 +606,77 @@ a {
   margin-bottom: 10px;
 }
 
+/* Create Page */
+
+.createRecipe {
+  padding: 70px 0px;
+  /* position: relative; */
+  background-color: #e6b8fc;
+}
+
+.recipeContainer {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.createRecipe .holder {
+  padding: 15px 0px;
+}
+
+.createRecipe .holder h3 {
+  font-family: "gelion-med", Arial, Helvetica, sans-serif;
+  font-size: clamp(25px, 3vw, 32px);
+  color: #38c876;
+}
+
+.createRecipe #newRecipe {
+  margin-bottom: 20px;
+}
+
+.createRecipe #recipes {
+  display: block;
+}
+
+/* Recipe Detail */
+
+.recipeDetails {
+  padding: 70px 0px 34px 0px;
+}
+
+.recipeDetails .header h1 {
+  font-family: "gelion-med", Arial, Helvetica, sans-serif;
+  font-size: clamp(33px, 3vw, 40px);
+  color: #38c876;
+}
+
+.recipeDetails .header p {
+  width: 70%;
+
+  font-family: "gelion-light", Arial, Helvetica, sans-serif;
+  font-size: clamp(16px, 3vw, 18px);
+  color: #324454;
+}
+
+.recipeDetails .box {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.recipefoot a {
+  font-family: "gelion-light", Arial, Helvetica, sans-serif;
+  font-size: clamp(16px, 3vw, 18px);
+  color: #3c81bd;
+  margin-top: 15px;
+}
+
+.recipeDtlBtn button {
+  width: 80%;
+  margin-right: 5%;
+  font-family: "gelion-med", Arial, Helvetica, sans-serif;
+  font-size: clamp(17px, 3vw, 20px);
+  color: #f7f5f3;
+}
 @media only screen and (min-width: 320px) and (max-width: 990px) {
   #mainNav .navbar-nav {
     margin-left: 5% !important;

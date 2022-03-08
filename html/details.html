@@ -69,34 +69,76 @@
       </div>
     </nav>
 
-    <div class="recipe">
-      <div style="width: 60%; margin: 0 auto">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1>All Recipes</h1>
+    <div class="recipeDetails">
+      <div class="container">
+        <div class="row header">
+          <div class="col-md-12 mb-4">
+            <h1>Name of the Food</h1>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              est mollitia natus. Tenetur quod quidem eveniet corrupti
+              voluptatibus ipsa iusto tempore.
+            </p>
+            <h1>Ingredients Used</h1>
+            <p>
+              Onion, Garlic, Ginger, Salt, Pepper, Chicken, Carrots, Potatoes,
+              Coconut Milk
+            </p>
           </div>
         </div>
-        <div class="row mb-4">
-          <div class="col-md-12">
-            <!-- CARD -->
-            <div class="card mb-3">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <h3>Adobo</h3>
-                      <p>Hard</p>
-                    </div>
-                    <hr id="cardLine" />
-                    <p>
-                      Lorem ipsum dolor si Lorem ipsum dolor sit amet. Lorem
-                      ipsum dolor sit amet. Lorem su ignotar adsfasdfsdfsafasdf
-                    </p>
-                    <a href="">See More Details</a>
-                  </div>
-                </div>
-              </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="box text-center">
+              <p>24 Minutes</p>
+              <hr />
+              <h4>Cooking Time</h4>
             </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="box text-center">
+              <p>Moderate</p>
+              <hr />
+              <h4>Difficulty</h4>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="box text-center">
+              <p>4 People</p>
+              <hr />
+              <h4>Servings</h4>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-between align-item-center recipefoot"
+        >
+          <a href="">Go Back</a>
+          <div class="recipeDtlBtn d-flex">
+            <a
+              href=""
+              class="btn btn-md"
+              style="
+                background-color: #38c876;
+                color: white;
+                padding: 10px;
+                width: 80%;
+                margin-right: 20px;
+              "
+              >Edit</a
+            >
+            <a
+              href=""
+              class="btn btn-md"
+              style="
+                background-color: #c83838;
+                color: white;
+                padding: 10px;
+                width: 80%;
+              "
+              >Delete</a
+            >
           </div>
         </div>
       </div>
@@ -110,16 +152,3 @@
     ></script>
   </body>
 </html>
-
-<!-- let addRecipes = document.querySelector("#addRecipe"); let recipeContainer =
-document.querySelector("#recipes"); let inputRecipe =
-document.querySelector("#recipeInput"); let soloRecipe =
-document.querySelectorAll("#soloRecipe"); let deleteRecipe =
-document.querySelectorAll(".deleteRecipe"); addRecipes.addEventListener("click",
-() => { recipeContainer.innerHTML += `
-<div class="d-flex mb-3 soloRecipe">
-  <p>${inputRecipe.value}</p>
-  <button class="deleteRecipe"><i class="far fa-trash-alt"></i></button>
-</div>
-`; }); for (let items of deleteRecipe) { items.addEventListener("click",
-function () { this.parentNode.delete(); }); } -->

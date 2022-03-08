@@ -16,8 +16,11 @@ function resetInput() {
   setHeight.value = "";
   window.location.reload();
 }
-
-reset.addEventListener("click", resetInput);
+try {
+  reset.addEventListener("click", resetInput);
+} catch {
+  console.log("Smthng Error");
+}
 
 // Check Inputs
 
@@ -134,16 +137,42 @@ function printBmi() {
   bmiChange();
 }
 
-// CONTROLLER ON CALCULATE
-let calculate = document.querySelector(".calculate");
-calculate.addEventListener("click", printBmi);
+// ============= Create Page ===============
 
-// ================ OUR TEAM ====================
+let addRecipes = document.querySelector("#addRecipe");
+let recipeContainer = document.querySelector("#recipes");
+let inputRecipe = document.querySelector("#recipeInput");
+let soloRecipe = document.querySelectorAll("#soloRecipe");
+try {
+  addRecipes.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (inputRecipe.value.length === 0) {
+      alert("Put Some Ingredients");
+    } else {
+      recipeContainer.innerHTML += `
+  <div class="d-flex  soloRecipe text-center">
+    <p>${inputRecipe.value}</p>
+    <button class="deleteRecipe"><i class="far fa-trash-alt"></i></button>
+  </div>
 
-let teamBtn = document.querySelectorAll(".learn");
+`;
 
-for (let btn of teamBtn) {
-  btn.addEventListener("click", () => {
-    console.log("CLICKED");
+      inputRecipe.value = "";
+      let deleteRecipe = document.querySelectorAll(".deleteRecipe");
+      for (let deleteBtn of deleteRecipe) {
+        deleteBtn.addEventListener("click", function () {
+          this.parentNode.remove();
+        });
+      }
+    }
   });
+
+  inputRecipe.addEventListener("keyup", function (e) {
+    if (e.keyCode === 13) {
+      e.preventDefault();
+      addRecipes.click();
+    }
+  });
+} catch {
+  console.log("Smthng Error");
 }
