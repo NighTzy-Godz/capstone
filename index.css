@@ -112,7 +112,7 @@ a {
 } */
 
 .landing .title h1 {
-  font-size: clamp(3rem, 4.5vw, 64px);
+  font-size: clamp(60px, 8vw, 190px);
   color: #233748;
   font-family: "gelion-big", Arial, Helvetica, sans-serif;
   margin-bottom: 30px;
@@ -153,7 +153,7 @@ a {
 }
 
 .discover h1 {
-  font-size: clamp(2.2rem, 3vw, 35px);
+  font-size: clamp(52px, 8vw, 80px);
   font-family: "gelion-med", Arial, Helvetica, sans-serif;
   margin-bottom: 30px;
   color: #233748;
@@ -190,7 +190,7 @@ a {
 }
 
 .mainTitle .title h1 {
-  font-size: clamp(2.4rem, 3.5vw, 64px);
+  font-size: clamp(52px, 8vw, 80px);
   font-family: "gelion-med", Arial, Helvetica, sans-serif;
   margin-bottom: 30px;
   color: #233748;
@@ -228,32 +228,35 @@ a {
   padding-top: 110px;
 }
 
-.instruct .instructTitle h1 {
-  font-size: clamp(2.2rem, 3vw, 4.5rem);
+.instruct h1 {
+  font-size: clamp(52px, 8vw, 80px);
   font-family: "gelion-med", Arial, Helvetica, sans-serif;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   color: #233748;
 }
 
-.instruct .instructTitle p {
+.instruct p {
   font-family: "gelion-light", Arial, Helvetica, sans-serif;
   font-size: clamp(17px, 3vw, 25px);
   color: black;
   margin-bottom: 35px;
 }
 
-.instruct .figure i {
-  font-size: 25px;
-  margin-top: 6px;
-  width: 50px;
-  color: #3dc795;
+.instruct a {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 200px;
+  background-color: #233748;
+  color: white;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 50px !important;
+  display: block;
 }
 
-.instruct .figure .figPar {
-  font-family: "gelion-light", Arial, Helvetica, sans-serif;
-  font-size: clamp(17px, 3vw, 21px);
-  color: black;
-  margin-bottom: 30px;
+.instruct a:hover {
+  transform: scale(1.1);
+  background: #000;
 }
 
 /* ============= BMI PAGE ============ */
